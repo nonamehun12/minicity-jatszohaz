@@ -1,0 +1,6 @@
+/* Global styles are handled by Tailwind CSS */
+/* This file exists to satisfy build tool requirements and prevent 404 errors */
+body {
+  margin: 0;
+  padding: 0;
+}
