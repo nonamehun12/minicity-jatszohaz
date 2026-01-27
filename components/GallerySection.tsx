@@ -47,13 +47,17 @@ const GallerySection: React.FC = () => {
               className="rounded-[2rem] overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300 bg-white aspect-[4/3] will-change-transform border border-slate-200 relative group"
             >
               <div className="absolute inset-0 bg-slate-200 animate-pulse -z-10" />
-              
+
               <img
                 src={item.src}
                 alt={item.alt}
-                loading="lazy"
+                width={800}
+                height={600}
+                loading={index < 3 ? "eager" : "lazy"}
                 decoding="async"
+                fetchPriority={index < 3 ? "high" : "auto"}
                 title={item.alt}
+                sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
                 // Add a graceful fallback in case the file isn't uploaded yet so the layout doesn't break
                 onError={(e) => {
                   e.currentTarget.src = `https://placehold.co/800x600/e2e8f0/475569?text=Mini+City+Kép+${index + 1}`;

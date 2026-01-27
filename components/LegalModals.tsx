@@ -22,7 +22,7 @@ const LegalModals: React.FC<LegalModalProps> = ({ isOpen, type, onClose }) => {
             <h3 className="font-bold text-slate-800 text-lg mb-2">Szolgáltató adatai</h3>
             <ul className="space-y-2">
               <li>
-                <strong>Cégnév:</strong> BORSOD GASZTRO Kft.<br/>
+                <strong>Cégnév:</strong> BORSOD GASZTRO Kft.<br />
                 <span className="text-xs text-slate-500">(BORSOD GASZTRO Vendéglátóipari és Szolgáltató Korlátolt Felelősségű Társaság)</span>
               </li>
               <li><strong>Székhely:</strong> 1035 Budapest, Miklós u. 1. 8. em. 43.</li>
@@ -37,9 +37,9 @@ const LegalModals: React.FC<LegalModalProps> = ({ isOpen, type, onClose }) => {
           <div>
             <h3 className="font-bold text-slate-800 text-lg mb-2">Tárhelyszolgáltató</h3>
             <p>
-              <strong>Név:</strong> Netlify, Inc.<br />
-              <strong>Cím:</strong> 2325 3rd Street, Suite 296, San Francisco, California 94107<br />
-              <strong>Weboldal:</strong> www.netlify.com
+              <strong>Név:</strong> Vercel Inc.<br />
+              <strong>Cím:</strong> 340 S Lemon Ave #4133, Walnut, CA 91789, USA<br />
+              <strong>Weboldal:</strong> www.vercel.com
             </p>
           </div>
 
@@ -58,11 +58,11 @@ const LegalModals: React.FC<LegalModalProps> = ({ isOpen, type, onClose }) => {
       text: (
         <div className="space-y-6 text-slate-600 text-sm leading-relaxed">
           <p className="italic text-xs">Utolsó frissítés: 2025. május 21.</p>
-          
+
           <div className="bg-green-50 p-4 rounded-xl border border-green-100">
             <h3 className="font-bold text-slate-800 text-lg mb-2">Röviden, tömören</h3>
             <p>
-              A weboldal használata során az Ön személyes adatainak védelme kiemelten fontos számunkra. 
+              A weboldal használata során az Ön személyes adatainak védelme kiemelten fontos számunkra.
               Az adatokat bizalmasan kezeljük, és harmadik félnek nem adjuk át, kivéve ha arra törvény kötelez.
             </p>
           </div>
@@ -91,8 +91,8 @@ const LegalModals: React.FC<LegalModalProps> = ({ isOpen, type, onClose }) => {
           </div>
 
           <div>
-             <h3 className="font-bold text-slate-800 text-base mb-1">5. Kamera rendszer</h3>
-             <p>Tájékoztatjuk, hogy a játszóház területén vagyonvédelmi és biztonsági okokból kamerarendszer üzemel. A felvételeket a hatályos jogszabályoknak megfelelően tároljuk.</p>
+            <h3 className="font-bold text-slate-800 text-base mb-1">5. Kamera rendszer</h3>
+            <p>Tájékoztatjuk, hogy a játszóház területén vagyonvédelmi és biztonsági okokból kamerarendszer üzemel. A felvételeket a hatályos jogszabályoknak megfelelően tároljuk.</p>
           </div>
         </div>
       )
@@ -129,7 +129,7 @@ const LegalModals: React.FC<LegalModalProps> = ({ isOpen, type, onClose }) => {
               </div>
               <h2 className="text-xl md:text-2xl font-bold text-slate-800">{activeContent.title}</h2>
             </div>
-            <button 
+            <button
               onClick={onClose}
               className="p-2 hover:bg-slate-100 rounded-full transition-colors text-slate-400 hover:text-slate-600"
             >
@@ -144,7 +144,7 @@ const LegalModals: React.FC<LegalModalProps> = ({ isOpen, type, onClose }) => {
 
           {/* Footer */}
           <div className="p-4 bg-slate-50 border-t border-slate-100 text-center">
-            <button 
+            <button
               onClick={onClose}
               className="px-6 py-2 bg-slate-800 text-white font-bold rounded-full hover:bg-slate-700 transition-colors text-sm"
             >
